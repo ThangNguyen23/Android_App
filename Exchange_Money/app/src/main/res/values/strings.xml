@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"><b>Exchange Money</b></string>
+    <string name="input"><b><font size="17">Input</font></b></string>
+    <string name="output"><b><font size="17">Output</font></b></string>
+</resources>

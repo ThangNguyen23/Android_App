@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="63dp"
+        app:srcCompat="@drawable/pizza"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView1"
+        android:layout_width="180dp"
+        android:layout_height="21dp"
+        android:text="TacoPronto"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="14dp"
+        android:text="123 Euclid Ave"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView3"
+        android:layout_width="175dp"
+        android:layout_height="34dp"
+        android:text="55665566"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView4"
+        android:textAlignment="center"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:background="@drawable/border"
+        android:text="Size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView5"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:text="Tortilla"
+        android:background="@drawable/border"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:layout_width="350dp"
+        android:layout_height="28dp"
+        android:text="Fillngs"
+        android:background="@drawable/border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="169dp"
+        app:layout_constraintHorizontal_bias="0.576" />
+
+    <TextView
+        android:textColor="#546E7A"
+        android:id="@+id/textView10"
+        android:layout_width="350dp"
+        android:layout_height="28dp"
+        android:text="Beverage"
+        android:background="@drawable/border"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="169dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox1"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Beef"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox2"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Chicken"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox1"
+        app:layout_constraintTop_toTopOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox3"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="White Fish"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Cheese"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#546E7A"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox3"
+        app:layout_constraintTop_toTopOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox5"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Sea food"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox4"
+        app:layout_constraintTop_toTopOf="@+id/checkBox4" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox6"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Rice"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox7"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Beans"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintRight_toRightOf="@+id/checkBox6"
+        app:layout_constraintTop_toTopOf="@+id/checkBox6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox8"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Pico de Gallo"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintRight_toRightOf="@+id/checkBox7"
+        app:layout_constraintTop_toTopOf="@+id/checkBox7" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox9"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Guacamole"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintRight_toRightOf="@+id/checkBox8"
+        app:layout_constraintTop_toTopOf="@+id/checkBox8" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="LBT"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#546E7A"
+        app:layout_constraintRight_toRightOf="@+id/checkBox9"
+        app:layout_constraintTop_toTopOf="@+id/checkBox9" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox11"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Soda"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox12"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Cerveza"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintLeft_toLeftOf="@+id/checkBox11"
+        app:layout_constraintTop_toTopOf="@+id/checkBox11" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox13"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Margarita"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:textColor="#546E7A"
+        android:id="@+id/checkBox14"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:buttonTint="@color/colorRadio"
+        android:text="Tequila"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintRight_toRightOf="@+id/checkBox13"
+        app:layout_constraintTop_toTopOf="@+id/checkBox13" />
+
+    <Button
+        android:textColor="#FAFAFA"
+        android:id="@+id/button1"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:text="Place your Order"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="71dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintLeft_toRightOf="@+id/checkBox12"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:textColor="#FAFAFA"
+        android:id="@+id/button2"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:background="@drawable/custom_button"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintLeft_toRightOf="@+id/checkBox12"
+        app:layout_constraintRight_toLeftOf="@+id/checkBox14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp">
+
+        <RadioButton
+            android:textColor="#546E7A"
+            android:id="@+id/radioButton1"
+            android:layout_width="111dp"
+            android:layout_height="32dp"
+            android:buttonTint="@color/colorRadio"
+            android:checked="true"
+            android:text="Large"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="126dp" />
+
+        <RadioButton
+            android:textColor="#546E7A"
+            android:id="@+id/radioButton2"
+            android:layout_width="111dp"
+            android:layout_height="35dp"
+            android:buttonTint="@color/colorRadio"
+            android:text="Medium"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp">
+
+        <RadioButton
+            android:textColor="#546E7A"
+            android:id="@+id/radioButton3"
+            android:layout_width="111dp"
+            android:layout_height="32dp"
+            android:buttonTint="@color/colorRadio"
+            android:checked="true"
+            android:text="Corn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="-65"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <RadioButton
+            android:textColor="#546E7A"
+            android:id="@+id/radioButton4"
+            android:layout_width="111dp"
+            android:layout_height="35dp"
+            android:buttonTint="@color/colorRadio"
+            android:text="Flour"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="-72dp"
+            tools:layout_editor_absoluteY="223dp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    app:backgroundTint="@color/colorCustom"-->
